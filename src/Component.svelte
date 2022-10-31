@@ -5,12 +5,12 @@
   export let trigger;
   export let interval;
   export let display;
-  export let text
+  export let text;
 
   const { styleable } = getContext("sdk");
   const component = getContext("component");
 </script>
 
 <div use:styleable={$component.styles}>
-  <Interval class="interval" on:trigger={trigger} interval={interval} display={display}/>
+  <Interval on:trigger={trigger} interval={interval} display={display} text={text}/>
 </div>

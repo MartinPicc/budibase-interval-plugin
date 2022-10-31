@@ -21,6 +21,16 @@
         "defaultValue": true
       },
       {
+        "type": "text",
+        "key": "text",
+        "label": "Text to display",
+        "defaultValue": "Interval",
+        "dependsOn": {
+          "setting": "display",
+          "value": true
+        }
+      },
+      {
         "type": "event",
         "key": "trigger",
         "label": "On interval"

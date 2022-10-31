@@ -4,17 +4,19 @@
 
   const dispatch = createEventDispatcher();
   export let interval;
-  export let display;
+  export let display = true;
+  export let text = "Interval";
 
   if (interval > 0) {
-    window.setInterval(() => { dispatch("trigger"); console.log("trigger"); }, interval * 1000);
+    window.setInterval(() => { dispatch("trigger"); }, interval * 1000);
   }
+
 </script>
 
 {#if display}
   <div class="container">
     {@html stopwatchSvg} 
-    <span>Trigger every {interval} second(s)</span>
+    <span>{text}</span>
   </div>
 {/if}
 

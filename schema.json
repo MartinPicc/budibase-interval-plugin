@@ -17,7 +17,7 @@
       {
         "type": "boolean",
         "key": "display",
-        "label": "Visual representation",
+        "label": "Display component in frontend",
         "defaultValue": true
       },
       {

@@ -1,0 +1,31 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "Interval",
+    "friendlyName": "Interval",
+    "description": "Set time interval to refresh data provider automatically",
+    "icon": "Stopwatch",
+    "settings": [
+      {
+        "type": "number",
+        "key": "interval",
+        "label": "Interval (in seconds)",
+        "min": 1,
+        "required": true
+      },
+      {
+        "type": "boolean",
+        "key": "display",
+        "label": "Visual representation",
+        "defaultValue": true
+      },
+      {
+        "type": "event",
+        "key": "trigger",
+        "label": "On interval"
+      }
+    ],
+    "info": "Experiencing bugs? Any feedback? visit: https://github.com/MartinPicc/budibase-interval-plugin/issues"
+  }
+}

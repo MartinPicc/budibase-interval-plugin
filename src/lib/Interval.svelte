@@ -4,7 +4,7 @@
 
   const dispatch = createEventDispatcher();
   export let interval;
-  export let display;
+  export let display = true;
   export let text = "Interval";
 
   if (interval > 0) {

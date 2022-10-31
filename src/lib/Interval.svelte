@@ -7,7 +7,7 @@
   export let display;
 
   if (interval > 0) {
-    window.setInterval(() => { dispatch("trigger"); console.log("trigger"); }, interval * 1000);
+    window.setInterval(() => { dispatch("trigger"); }, interval * 1000);
   }
 </script>
 
